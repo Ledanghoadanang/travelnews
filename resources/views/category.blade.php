@@ -7,24 +7,24 @@
     <title>TechNews - HTML and CSS Template</title>
 
     <!-- favicon -->
-    <link href="assets/img/favicon.png" rel=icon>
+    <link href="{{ asset('img/favicon.png') }}" rel=icon>
 
     <!-- web-fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- font-awesome -->
-    <link href="assets/fonts/font-awesome/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ asset('fonts/font-awesome/font-awesome.min.css') }}" rel="stylesheet">
     <!-- Mobile Menu Style -->
-    <link href="assets/css/mobile-menu.css" rel="stylesheet">
+    <link href="{{ asset('css/mobile-menu.css') }}" rel="stylesheet">
 
     <!-- Owl carousel -->
-    <link href="assets/css/owl.carousel.css" rel="stylesheet">
-    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="{{ asset('css/owl.carousel.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/owl.theme.default.min.css') }}" rel="stylesheet">
     <!-- Theme Style -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -77,7 +77,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/img/logo.png" alt="Tech NewsLogo"></a>
+                        <a href="index.html"><img src="{{ asset('img/logo.png') }}" alt="Tech NewsLogo"></a>
                     </div>
                     <!-- Logo Section -->
                 </div>
@@ -200,69 +200,36 @@
 </section>
 <!-- header_section_wrapper -->
 
-<section id="entity_section" class="entity_section">
+<section class="breadcrumb_section">
+    <div class="container">
+        <div class="row">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Tech</a></li>
+                <li class="active"><a href="#">Mobile</a></li>
+            </ol>
+        </div>
+    </div>
+</section>
+
 <div class="container">
 <div class="row">
 <div class="col-md-8">
 <div class="entity_wrapper">
-    <div class="entity_title">
-        <h1><a href="single.html" target="_self">Airbnb launches photo-centric app for iPads and Android tablets.</a>
-        </h1>
+    <div class="entity_title header_purple">
+        <h1><a href="category.html" target="_blank">Mobile</a></h1>
     </div>
     <!-- entity_title -->
 
-    <div class="entity_meta">
-        <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
-    </div>
-    <!-- entity_meta -->
-
-    <div class="rating">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-half-full"></i>
-    </div>
-    <!-- rating -->
-
-    <div class="entity_social">
-        <a href="#" class="icons-sm sh-ic"><i class="fa fa-share-alt"></i><b>424</b>
-            <span class="share_ic">Shares</span>
-        </a>
-        <a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
-        <!--Twitter-->
-        <a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
-        <!--Google +-->
-        <a href="#" class="icons-sm inst-ic"><i class="fa fa-google-plus"> </i></a>
-        <!--Linkedin-->
-        <a href="#" class="icons-sm tmb-ic"><i class="fa fa-ge"> </i></a>
-        <!--Pinterest-->
-        <a href="#" class="icons-sm rss-ic"><i class="fa fa-rss"> </i></a>
-        <span class="arrow">&raquo;</span>
-    </div>
-    <!-- entity_social -->
-
     <div class="entity_thumb">
-        <img class="img-responsive" src="assets/img/category_img_top.jpg" alt="feature-top">
+        <img class="img-responsive" src="{{ asset('img/category_img_top.jpg') }}" alt="feature-top">
     </div>
     <!-- entity_thumb -->
 
-    <div class="entity_content">
-        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-            will give you a complete account of the system, and expound the actual teachings of the great explorer of
-            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
-            because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
-            consequences that are extremely painful. </p>
-    </div>
-    <!-- entity_content -->
-
-</div>
-<!-- entity_wrapper -->
-
-<div class="entity_wrapper">
     <div class="entity_title">
-        <h1><a href="single.html" target="_self">Airbnb launches photo-centric app for iPads and Android tablets.</a>
-        </h1>
+        <a href="single.html" target="_blank"><h3> Airbnb launches photo-centric app for iPads and Android
+            tablets. </h3></a>
     </div>
     <!-- entity_title -->
 
@@ -271,316 +238,513 @@
     </div>
     <!-- entity_meta -->
 
-    <div class="rating">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-half-full"></i>
-    </div>
-    <!-- rating -->
-
-    <div class="entity_social">
-        <a href="#" class="icons-sm sh-ic"><i class="fa fa-share-alt"></i><b>424</b>
-            <span class="share_ic">Shares</span>
-        </a>
-        <a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
-        <!--Twitter-->
-        <a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
-        <!--Google +-->
-        <a href="#" class="icons-sm inst-ic"><i class="fa fa-google-plus"> </i></a>
-        <!--Linkedin-->
-        <a href="#" class="icons-sm tmb-ic"><i class="fa fa-ge"> </i></a>
-        <!--Pinterest-->
-        <a href="#" class="icons-sm rss-ic"><i class="fa fa-rss"> </i></a>
-        <span class="arrow">&raquo;</span>
-    </div>
-    <!-- entity_social -->
-
     <div class="entity_content">
-        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-            will give you a complete account of the system, and expound the actual teachings of the great explorer of
-            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
-            because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
-            consequences that are extremely painful. </p>
+        Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users
+        after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
     </div>
     <!-- entity_content -->
+
+    <div class="entity_social">
+        <span><i class="fa fa-share-alt"></i>424 <a href="#">Shares</a> </span>
+        <span><i class="fa fa-comments-o"></i>4 <a href="#">Comments</a> </span>
+    </div>
+    <!-- entity_social -->
 
 </div>
 <!-- entity_wrapper -->
 
-<div class="category_article_wrapper">
-    <div class="entity_title">
-        <h1><a href="single.html" target="_self">Airbnb launches photo-centric app for iPads and Android tablets.</a>
-        </h1>
-    </div>
-    <!-- entity_title -->
-
-    <div class="entity_meta">
-        <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
-    </div>
-    <!-- entity_meta -->
-
-    <div class="rating">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-half-full"></i>
-    </div>
-    <!-- rating -->
-
-    <div class="entity_social">
-        <a href="#" class="icons-sm sh-ic"><i class="fa fa-share-alt"></i><b>424</b>
-            <span class="share_ic">Shares</span>
-        </a>
-        <a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
-        <!--Twitter-->
-        <a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
-        <!--Google +-->
-        <a href="#" class="icons-sm inst-ic"><i class="fa fa-google-plus"> </i></a>
-        <!--Linkedin-->
-        <a href="#" class="icons-sm tmb-ic"><i class="fa fa-ge"> </i></a>
-        <!--Pinterest-->
-        <a href="#" class="icons-sm rss-ic"><i class="fa fa-rss"> </i></a>
-        <span class="arrow">&raquo;</span>
-    </div>
-    <!-- entity_social -->
-
-    <div class="row">
-        <div class="col-md-7">
-            <div id="featured-news-carousal" class="carousel slide" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img class="img-responsive" src="assets/img/category_img9.jpg" alt="Chania">
-                    </div>
-                    <!--feature_news_item-->
-                    <div class="item">
-                        <img class="img-responsive" src="assets/img/category_img13.jpg" alt="Chania">
-                    </div>
-                    <!--feature_news_item-->
-                    <div class="item">
-                        <img class="img-responsive" src="assets/img/category_img14.jpg" alt="Chania">
-                    </div>
-                    <!--feature_news_item-->
-                    <div class="item">
-                        <img class="img-responsive" src="assets/img/category_img15.jpg" alt="Chania">
-                    </div>
-                    <!--feature_news_item-->
-
-                    <!-- Left and right controls -->
-                    <div class="control-wrapper">
-                        <a class="left carousel-control" href="#featured-news-carousal" role="button" data-slide="prev">
-                            <i class="fa fa-chevron-left" aria-hidden="true"></i> </a>
-                        <a class="right carousel-control" href="#featured-news-carousal" role="button"
-                           data-slide="next"> <i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
-                    </div>
-
-                </div>
-                <!--carousel-inner-->
-
+<div class="row">
+    <div class="col-md-6">
+        <div class="category_article_body">
+            <div class="top_article_img">
+                <img class="img-fluid" src="{{ asset('img/category_img1.jpg') }}" alt="feature-top">
             </div>
-            <!--carousel-->
+            <!-- top_article_img -->
+
+            <div class="category_article_title">
+                <h5><a href="single.html" target="_blank">Airbnb launches photo-centric app for iPads and Android
+                    tablets. </a></h5>
+            </div>
+            <!-- category_article_title -->
+
+            <div class="article_date">
+                <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+            </div>
+            <!-- article_date -->
+
+            <div class="category_article_content">
+                Collaboratively administrate empowered markets via plug-and-play networks.
+                Dynamically procrastinate B2C users after installed base benefits. Dramatically
+                visualize customer directed convergence without revolutionary ROI.
+            </div>
+            <!-- category_article_content -->
+
+            <div class="article_social">
+                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+            </div>
+            <!-- article_social -->
 
         </div>
-        <!-- col-md-7 -->
+        <!-- category_article_body -->
 
-        <div class="col-md-5">
-            <div class="right_category_image">
-                <img class="img-responsive" src="assets/img/category_img10.jpg" alt="feature-top">
-            </div>
-            <!--carousel-->
+    </div>
+    <!-- col-md-6 -->
 
-            <div class="right_category_image">
-                <img class="img-responsive" src="assets/img/category_img11.jpg" alt="feature-top">
+    <div class="col-md-6">
+        <div class="category_article_body">
+            <div class="top_article_img">
+                <img class="img-responsive" src="{{ asset('img/category_img2.jpg') }}" alt="feature-top">
             </div>
-            <!--carousel-->
+            <!-- top_article_img -->
+
+            <div class="category_article_title">
+                <h5><a href="single.html" target="_blank">Airbnb launches photo-centric app for iPads and Android
+                    tablets. </a></h5>
+            </div>
+            <!-- category_article_title -->
+
+            <div class="article_date">
+                <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+            </div>
+            <!-- article_date -->
+
+            <div class="category_article_content">
+                Collaboratively administrate empowered markets via plug-and-play networks.
+                Dynamically procrastinate B2C users after installed base benefits. Dramatically
+                visualize customer directed convergence without revolutionary ROI.
+            </div>
+            <!-- category_article_content -->
+
+            <div class="article_social">
+                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+            </div>
+            <!-- article_social -->
 
         </div>
-        <!-- col-md-5 -->
+        <!-- category_article_body -->
+
+    </div>
+    <!-- col-md-6 -->
+
+</div>
+<!-- row -->
+
+<div class="widget_advertisement">
+    <img class="img-responsive" src="{{ asset('img/category_advertisement.jpg') }}" alt="feature-top">
+</div>
+<!-- widget_advertisement -->
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="category_article_body">
+            <div class="top_article_img">
+                <img class="img-responsive" src="{{ asset('img/category_img3.jpg') }}" alt="feature-top">
+            </div>
+            <!-- row -->
+
+            <div class="category_article_title">
+                <h5><a href="single.html" target="_blank">Airbnb launches photo-centric app for iPads and Android
+                    tablets. </a></h5>
+            </div>
+            <!-- row -->
+
+            <div class="article_date">
+                <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+            </div>
+            <!-- row -->
+
+            <div class="category_article_content">
+                Collaboratively administrate empowered markets via plug-and-play networks.
+                Dynamically procrastinate B2C users after installed base benefits. Dramatically
+                visualize customer directed convergence without revolutionary ROI.
+            </div>
+            <!-- row -->
+
+            <div class="article_social">
+                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+            </div>
+            <!-- row -->
+
+        </div>
+        <!-- row -->
 
     </div>
     <!-- row -->
 
-    <div class="entity_content">
-        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-            will give you a complete account of the system, and expound the actual teachings of the great explorer of
-            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
-            because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
-            consequences that are extremely painful. </p>
+    <div class="col-md-6">
+        <div class="category_article_body">
+            <div class="top_article_img">
+                <img class="img-responsive" src="{{ asset('img/category_img4.jpg') }}" alt="feature-top">
+            </div>
+            <!-- top_article_img -->
+
+            <div class="category_article_title">
+                <h5><a href="single.html" target="_blank">Airbnb launches photo-centric app for iPads and Android
+                    tablets. </a></h5>
+            </div>
+            <!-- category_article_title -->
+
+            <div class="article_date">
+                <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+            </div>
+            <!-- article_date -->
+
+            <div class="category_article_content">
+                Collaboratively administrate empowered markets via plug-and-play networks.
+                Dynamically procrastinate B2C users after installed base benefits. Dramatically
+                visualize customer directed convergence without revolutionary ROI.
+            </div>
+            <!-- category_article_content -->
+
+            <div class="article_social">
+                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+            </div>
+            <!-- article_social -->
+
+        </div>
+        <!-- category_article_body -->
+
     </div>
-    <!--entity_content-->
+    <!-- col-md-6 -->
 
 </div>
-<!-- entity_wrapper -->
+<!-- row -->
 
-<div class="entity_wrapper">
-    <div class="entity_title">
-        <h1><a href="single.html" target="_self">Airbnb launches photo-centric app for iPads and Android tablets.</a>
-        </h1>
-    </div>
-    <!-- entity_title -->
+<div class="widget_advertisement">
+    <img class="img-responsive" src="{{ asset('img/category_advertisement.jpg') }}" alt="feature-top">
+</div>
+<!-- col-md-6 -->
 
-    <div class="entity_meta">
-        <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
-    </div>
-    <!-- entity_meta -->
+<div class="row">
+    <div class="col-md-6">
+        <div class="category_article_body">
+            <div class="top_article_img">
+                <img class="img-responsive" src="{{ asset('img/category_img5.jpg') }}" alt="feature-top">
+            </div>
+            <!-- top_article_img -->
 
-    <div class="rating">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-half-full"></i>
-    </div>
-    <!-- rating -->
+            <div class="category_article_title">
+                <h5><a href="single.html" target="_blank">Airbnb launches photo-centric app for iPads and Android
+                    tablets. </a></h5>
+            </div>
+            <!-- category_article_title -->
 
-    <div class="entity_social">
-        <a href="#" class="icons-sm sh-ic"><i class="fa fa-share-alt"></i><b>424</b>
-            <span class="share_ic">Shares</span>
-        </a>
-        <a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
-        <!--Twitter-->
-        <a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
-        <!--Google +-->
-        <a href="#" class="icons-sm inst-ic"><i class="fa fa-google-plus"> </i></a>
-        <!--Linkedin-->
-        <a href="#" class="icons-sm tmb-ic"><i class="fa fa-ge"> </i></a>
-        <!--Pinterest-->
-        <a href="#" class="icons-sm rss-ic"><i class="fa fa-rss"> </i></a>
-        <span class="arrow">&raquo;</span>
-    </div>
-    <!-- entity_social -->
+            <div class="article_date">
+                <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+            </div>
+            <!-- article_date -->
 
-    <div class="embed-responsive embed-responsive-4by3">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h5Jni-vy_5M"></iframe>
-    </div>
-    <!-- entity_social -->
+            <div class="category_article_content">
+                Collaboratively administrate empowered markets via plug-and-play networks.
+                Dynamically procrastinate B2C users after installed base benefits. Dramatically
+                visualize customer directed convergence without revolutionary ROI.
+            </div>
+            <!-- category_article_content -->
 
-    <div class="entity_content">
-        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-            will give you a complete account of the system, and expound the actual teachings of the great explorer of
-            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
-            because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
-            consequences that are extremely painful. </p>
+            <div class="article_social">
+                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+            </div>
+            <!-- article_social -->
+
+        </div>
+        <!-- category_article_body -->
+
     </div>
-    <!--entity_content-->
+    <!-- col-md-6 -->
+
+    <div class="col-md-6">
+        <div class="category_article_body">
+            <div class="top_article_img">
+                <img class="img-responsive" src="{{ asset('img/category_img6.jpg') }}" alt="feature-top">
+            </div>
+            <!-- top_article_img -->
+
+            <div class="category_article_title">
+                <h5><a href="single.html" target="_blank">Airbnb launches photo-centric app for iPads and Android
+                    tablets. </a></h5>
+            </div>
+            <!-- category_article_title -->
+
+            <div class="article_date">
+                <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+            </div>
+            <!-- article_date -->
+
+            <div class="category_article_content">
+                Collaboratively administrate empowered markets via plug-and-play networks.
+                Dynamically procrastinate B2C users after installed base benefits. Dramatically
+                visualize customer directed convergence without revolutionary ROI.
+            </div>
+            <!-- category_article_content -->
+
+            <div class="article_social">
+                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+            </div>
+            <!-- article_social -->
+
+        </div>
+        <!-- category_article_body -->
+
+    </div>
+    <!-- col-md-6 -->
 
 </div>
-<!-- entity_wrapper -->
+<!-- row -->
 
-<div class="entity_wrapper">
-    <div class="entity_title">
-        <h1><a href="single.html" target="_self">Airbnb launches photo-centric app for iPads and Android tablets.</a>
-        </h1>
-    </div>
-    <!-- entity_title -->
+<div class="widget_advertisement">
+    <img class="img-responsive" src="{{ asset('img/category_advertisement.jpg') }}" alt="feature-top">
+</div>
+<!-- col-md-6 -->
 
-    <div class="entity_meta">
-        <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
-    </div>
-    <!-- entity_meta -->
+<div class="row">
+    <div class="col-md-6">
+        <div class="category_article_body">
+            <div class="top_article_img">
+                <img class="img-responsive" src="{{ asset('img/category_img7.jpg') }}" alt="feature-top">
+            </div>
+            <!-- top_article_img -->
 
-    <div class="rating">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-half-full"></i>
-    </div>
-    <!-- rating -->
+            <div class="category_article_title">
+                <h5><a href="single.html" target="_blank">Airbnb launches photo-centric app for iPads and Android
+                    tablets. </a></h5>
+            </div>
+            <!-- top_article_img -->
 
-    <div class="entity_social">
-        <a href="#" class="icons-sm sh-ic"><i class="fa fa-share-alt"></i><b>424</b>
-            <span class="share_ic">Shares</span>
-        </a>
-        <a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
-        <!--Twitter-->
-        <a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
-        <!--Google +-->
-        <a href="#" class="icons-sm inst-ic"><i class="fa fa-google-plus"> </i></a>
-        <!--Linkedin-->
-        <a href="#" class="icons-sm tmb-ic"><i class="fa fa-ge"> </i></a>
-        <!--Pinterest-->
-        <a href="#" class="icons-sm rss-ic"><i class="fa fa-rss"> </i></a>
-        <span class="arrow">&raquo;</span>
-    </div>
-    <!-- entity_social -->
+            <div class="article_date">
+                <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+            </div>
+            <!-- top_article_img -->
 
-    <div class="entity_thumb">
-        <img class="img-responsive" src="assets/img/category_img12.jpg" alt="feature-top">
-    </div>
-    <!-- entity_thumb -->
+            <div class="category_article_content">
+                Collaboratively administrate empowered markets via plug-and-play networks.
+                Dynamically procrastinate B2C users after installed base benefits. Dramatically
+                visualize customer directed convergence without revolutionary ROI.
+            </div>
+            <!-- top_article_img -->
 
-    <div class="entity_content">
-        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-            will give you a complete account of the system, and expound the actual teachings of the great explorer of
-            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
-            because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
-            consequences that are extremely painful. </p>
+            <div class="article_social">
+                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+            </div>
+            <!-- top_article_img -->
+
+        </div>
+        <!-- top_article_img -->
+
     </div>
-    <!-- entity_content -->
+    <!-- top_article_img -->
+
+    <div class="col-md-6">
+        <div class="category_article_body">
+            <div class="top_article_img">
+                <img class="img-responsive" src="{{ asset('img/category_img8.jpg') }}" alt="feature-top">
+            </div>
+            <!-- top_article_img -->
+
+            <div class="category_article_title">
+                <h5><a href="single.html" target="_blank">Airbnb launches photo-centric app for iPads and Android
+                    tablets. </a></h5>
+            </div>
+            <!-- category_article_title -->
+
+            <div class="article_date">
+                <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+            </div>
+            <!-- article_date -->
+
+            <div class="category_article_content">
+                Collaboratively administrate empowered markets via plug-and-play networks.
+                Dynamically procrastinate B2C users after installed base benefits. Dramatically
+                visualize customer directed convergence without revolutionary ROI.
+            </div>
+            <!-- category_article_content -->
+
+            <div class="article_social">
+                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+            </div>
+            <!-- article_social -->
+
+        </div>
+        <!-- category_article_body -->
+
+    </div>
+    <!-- col-md-6 -->
 
 </div>
-<!-- entity_wrapper -->
+<!-- row -->
 
-<div class="entity_wrapper">
-    <div class="entity_title">
-        <h1><a href="single.html" target="_self">Airbnb launches photo-centric app for iPads and Android tablets.</a>
-        </h1>
+<div class="widget_advertisement">
+    <img class="img-responsive" src="{{ asset('img/category_advertisement.jpg') }}" alt="feature-top">
+</div>
+<!-- col-md-6 -->
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="category_article_body">
+            <div class="top_article_img">
+                <img class="img-responsive" src="{{ asset('img/category_img7.jpg') }}" alt="feature-top">
+            </div>
+            <!-- top_article_img -->
+
+            <div class="category_article_title">
+                <h5><a href="single.html" target="_blank">Airbnb launches photo-centric app for iPads and Android
+                    tablets. </a></h5>
+            </div>
+            <!-- top_article_img -->
+
+            <div class="article_date">
+                <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+            </div>
+            <!-- top_article_img -->
+
+            <div class="category_article_content">
+                Collaboratively administrate empowered markets via plug-and-play networks.
+                Dynamically procrastinate B2C users after installed base benefits. Dramatically
+                visualize customer directed convergence without revolutionary ROI.
+            </div>
+            <!-- top_article_img -->
+
+            <div class="article_social">
+                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+            </div>
+            <!-- top_article_img -->
+
+        </div>
+        <!-- top_article_img -->
+
     </div>
-    <!-- entity_title -->
+    <!-- top_article_img -->
 
-    <div class="entity_meta">
-        <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+    <div class="col-md-6">
+        <div class="category_article_body">
+            <div class="top_article_img">
+                <img class="img-responsive" src="{{ asset('img/category_img8.jpg') }}" alt="feature-top">
+            </div>
+            <!-- top_article_img -->
+
+            <div class="category_article_title">
+                <h5><a href="single.html" target="_blank">Airbnb launches photo-centric app for iPads and Android
+                    tablets. </a></h5>
+            </div>
+            <!-- category_article_title -->
+
+            <div class="article_date">
+                <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+            </div>
+            <!-- article_date -->
+
+            <div class="category_article_content">
+                Collaboratively administrate empowered markets via plug-and-play networks.
+                Dynamically procrastinate B2C users after installed base benefits. Dramatically
+                visualize customer directed convergence without revolutionary ROI.
+            </div>
+            <!-- category_article_content -->
+
+            <div class="article_social">
+                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+            </div>
+            <!-- article_social -->
+
+        </div>
+        <!-- category_article_body -->
+
     </div>
-    <!-- entity_meta -->
-
-    <div class="rating">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-half-full"></i>
-    </div>
-    <!-- rating -->
-
-    <div class="entity_social">
-        <a href="#" class="icons-sm sh-ic"><i class="fa fa-share-alt"></i><b>424</b>
-            <span class="share_ic">Shares</span>
-        </a>
-        <a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
-        <!--Twitter-->
-        <a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
-        <!--Google +-->
-        <a href="#" class="icons-sm inst-ic"><i class="fa fa-google-plus"> </i></a>
-        <!--Linkedin-->
-        <a href="#" class="icons-sm tmb-ic"><i class="fa fa-ge"> </i></a>
-        <!--Pinterest-->
-        <a href="#" class="icons-sm rss-ic"><i class="fa fa-rss"> </i></a>
-        <span class="arrow">&raquo;</span>
-    </div>
-    <!-- entity_social -->
-
-    <div class="entity_content">
-        <p class="blockquote">
-            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-            will give you a complete account of the system, and expound the actual teachings.”
-        </p>
-
-        <p>
-            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-            will give you a complete account of the system, and expound the actual teachings of the great explorer of
-            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
-            because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
-            consequences that are extremely painful.
-        </p>
-    </div>
-    <!-- entity_content -->
+    <!-- col-md-6 -->
 
 </div>
-<!-- entity_wrapper -->
+<!-- row -->
+
+<div class="widget_advertisement">
+    <img class="img-responsive" src="{{ asset('img/category_advertisement.jpg') }}" alt="feature-top">
+</div>
+<!-- col-md-6 -->
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="category_article_body">
+            <div class="top_article_img">
+                <img class="img-responsive" src="{{ asset('img/category_img7.jpg') }}" alt="feature-top">
+            </div>
+            <!-- top_article_img -->
+
+            <div class="category_article_title">
+                <h5><a href="single.html" target="_blank">Airbnb launches photo-centric app for iPads and Android
+                    tablets. </a></h5>
+            </div>
+            <!-- top_article_img -->
+
+            <div class="article_date">
+                <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+            </div>
+            <!-- top_article_img -->
+
+            <div class="category_article_content">
+                Collaboratively administrate empowered markets via plug-and-play networks.
+                Dynamically procrastinate B2C users after installed base benefits. Dramatically
+                visualize customer directed convergence without revolutionary ROI.
+            </div>
+            <!-- top_article_img -->
+
+            <div class="article_social">
+                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+            </div>
+            <!-- top_article_img -->
+
+        </div>
+        <!-- top_article_img -->
+
+    </div>
+    <!-- top_article_img -->
+
+    <div class="col-md-6">
+        <div class="category_article_body">
+            <div class="top_article_img">
+                <img class="img-responsive" src="{{ asset('img/category_img8.jpg') }}" alt="feature-top">
+            </div>
+            <!-- top_article_img -->
+
+            <div class="category_article_title">
+                <h5><a href="single.html" target="_blank">Airbnb launches photo-centric app for iPads and Android
+                    tablets. </a></h5>
+            </div>
+            <!-- category_article_title -->
+
+            <div class="article_date">
+                <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+            </div>
+            <!-- article_date -->
+
+            <div class="category_article_content">
+                Collaboratively administrate empowered markets via plug-and-play networks.
+                Dynamically procrastinate B2C users after installed base benefits. Dramatically
+                visualize customer directed convergence without revolutionary ROI.
+            </div>
+            <!-- category_article_content -->
+
+            <div class="article_social">
+                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
+                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
+            </div>
+            <!-- article_social -->
+
+        </div>
+        <!-- category_article_body -->
+
+    </div>
+    <!-- col-md-6 -->
+
+</div>
+<!-- row -->
 
 <nav aria-label="Page navigation" class="pagination_section">
     <ul class="pagination">
@@ -598,6 +762,7 @@
     </ul>
 </nav>
 <!-- navigation -->
+
 </div>
 <!-- col-md-8 -->
 
@@ -608,97 +773,97 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right1.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object" src="{{ asset('img/pop_right1.jpg') }}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
-                <a href="single.html" target="_self">Canon launches photo centric 00214 Model supper shutter camera</a>
+                <a href="single.html" target="_blank">Canon launches photo centric 00214 Model supper shutter camera</a>
             </h3> <span class="media-date"><a href="#">10Aug- 2015</a>,  by: <a href="#">Eric joan</a></span>
 
             <div class="widget_article_social">
                 <span>
-                    <a href="single.html" target="_self"> <i class="fa fa-share-alt"></i>424</a> Shares
-                </span> 
+                    <a href="single.html" target="_blank"> <i class="fa fa-share-alt"></i>424</a> Shares
+                </span>
                 <span>
-                    <a href="single.html" target="_self"><i class="fa fa-comments-o"></i>4</a> Comments
+                    <a href="single.html" target="_blank"><i class="fa fa-comments-o"></i>4</a> Comments
                 </span>
             </div>
         </div>
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right2.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object" src="{{ asset('img/pop_right2.jpg') }}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
-                <a href="single.html" target="_self">Samsung galaxy note are the supper mobile of all products.</a>
+                <a href="single.html" target="_blank">Samsung galaxy note are the supper mobile of all products.</a>
             </h3>
             <span class="media-date"><a href="#">10Aug- 2015</a>,  by: <a href="#">Eric joan</a></span>
 
             <div class="widget_article_social">
                 <span>
-                    <a href="single.html" target="_self"> <i class="fa fa-share-alt"></i>424</a> Shares
-                </span> 
+                    <a href="single.html" target="_blank"> <i class="fa fa-share-alt"></i>424</a> Shares
+                </span>
                 <span>
-                    <a href="single.html" target="_self"><i class="fa fa-comments-o"></i>4</a> Comments
+                    <a href="single.html" target="_blank"><i class="fa fa-comments-o"></i>4</a> Comments
                 </span>
             </div>
         </div>
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right3.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object" src="{{ asset('img/pop_right3.jpg') }}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
-                <a href="single.html" target="_self">Apple launches photo-centric wrist watch for Android</a>
+                <a href="single.html" target="_blank">Apple launches photo-centric wrist watch for Android</a>
             </h3>
             <span class="media-date"><a href="#">10Aug- 2015</a>,  by: <a href="#">Eric joan</a></span>
 
             <div class="widget_article_social">
                 <span>
-                    <a href="single.html" target="_self"> <i class="fa fa-share-alt"></i>424</a> Shares
-                </span> 
+                    <a href="single.html" target="_blank"> <i class="fa fa-share-alt"></i>424</a> Shares
+                </span>
                 <span>
-                    <a href="single.html" target="_self"><i class="fa fa-comments-o"></i>4</a> Comments
+                    <a href="single.html" target="_blank"><i class="fa fa-comments-o"></i>4</a> Comments
                 </span>
             </div>
         </div>
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right4.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object" src="{{ asset('img/pop_right4.jpg') }}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
-                <a href="single.html" target="_self">Kodak Hi-Speed shutter double shot camera comming soon</a>
+                <a href="single.html" target="_blank">Kodak Hi-Speed shutter double shot camera comming soon</a>
             </h3>
             <span class="media-date"><a href="#">10Aug- 2015</a>,  by: <a href="#">Eric joan</a></span>
 
             <div class="widget_article_social">
                 <span>
-                    <a href="single.html" target="_self"><i class="fa fa-share-alt"></i>424</a> Shares
-                </span> 
+                    <a href="single.html" target="_blank"><i class="fa fa-share-alt"></i>424</a> Shares
+                </span>
                 <span>
-                    <a href="single.html" target="_self"><i class="fa fa-comments-o"></i>4</a> Comments
+                    <a href="single.html" target="_blank"><i class="fa fa-comments-o"></i>4</a> Comments
                 </span>
             </div>
         </div>
     </div>
-    <p class="widget_divider"><a href="#" target="_self">More News&nbsp;&raquo;</a></p>
+    <p class="widget_divider"><a href="#" target="_blank">More News&nbsp;&raquo;</a></p>
 </div>
 <!-- Popular News -->
 
 <div class="widget hidden-xs m30">
-    <img class="img-responsive adv_img" src="assets/img/right_add1.jpg" alt="add_one">
-    <img class="img-responsive adv_img" src="assets/img/right_add2.jpg" alt="add_one">
-    <img class="img-responsive adv_img" src="assets/img/right_add3.jpg" alt="add_one">
-    <img class="img-responsive adv_img" src="assets/img/right_add4.jpg" alt="add_one">
+    <img class="img-responsive adv_img" src="{{ asset('img/right_add1.jpg') }}" alt="add_one">
+    <img class="img-responsive adv_img" src="{{ asset('img/right_add2.jpg') }}" alt="add_one">
+    <img class="img-responsive adv_img" src="{{ asset('img/right_add3.jpg') }}" alt="add_one">
+    <img class="img-responsive adv_img" src="{{ asset('img/right_add4.jpg') }}" alt="add_one">
 </div>
 <!-- Advertisement -->
 
 <div class="widget hidden-xs m30">
-    <img class="img-responsive widget_img" src="assets/img/right_add5.jpg" alt="add_one">
+    <img class="img-responsive widget_img" src="{{ asset('img/right_add5.jpg') }}" alt="add_one">
 </div>
 <!-- Advertisement -->
 
@@ -708,13 +873,13 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right1.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object" src="{{ asset('img/pop_right1.jpg') }}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
-                <a href="single.html" target="_self">DSLR is the most old camera at this time readmore about new
+                <a href="single.html" target="_blank">DSLR is the most old camera at this time readmore about new
                     products</a>
-            </h3> 
+            </h3>
             <span class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -726,9 +891,9 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right2.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object" src="{{ asset('img/pop_right2.jpg') }}" alt="Generic placeholder image"></a>
         </div>
-        <div class="media-body"><h3 class="media-heading"><a href="single.html" target="_self">Samsung is the best
+        <div class="media-body"><h3 class="media-heading"><a href="single.html" target="_blank">Samsung is the best
             mobile in the android market.</a></h3> <span class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -739,12 +904,12 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right3.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object" src="{{ asset('img/pop_right3.jpg') }}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
-                <a href="single.html" target="_self">Apple launches photo-centric wrist watch for Android</a>
-            </h3> 
+                <a href="single.html" target="_blank">Apple launches photo-centric wrist watch for Android</a>
+            </h3>
             <span class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -755,12 +920,12 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right4.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object" src="{{ asset('img/pop_right4.jpg') }}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
-                <a href="single.html" target="_self">Yasaki camera launches new generic hi-speed shutter camera.</a>
-            </h3> 
+                <a href="single.html" target="_blank">Yasaki camera launches new generic hi-speed shutter camera.</a>
+            </h3>
             <span class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -769,12 +934,12 @@
                 <i class="fa fa-star-half-full"></i>
             </span></div>
     </div>
-    <p class="widget_divider"><a href="#" target="_self">More News&nbsp;&raquo;</a></p>
+    <p class="widget_divider"><a href="#" target="_blank">More News&nbsp;&raquo;</a></p>
 </div>
 <!-- Reviews News -->
 
 <div class="widget hidden-xs m30">
-    <img class="img-responsive widget_img" src="assets/img/right_add6.jpg" alt="add_one">
+    <img class="img-responsive widget_img" src="{{ asset('img/right_add6.jpg') }}" alt="add_one">
 </div>
 <!-- Advertisement -->
 
@@ -784,11 +949,11 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right1.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object" src="{{ asset('img/pop_right1.jpg') }}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
-                <a href="single.html" target="_self">Yasaki camera launches new generic hi-speed shutter camera.</a>
+                <a href="single.html" target="_blank">Yasaki camera launches new generic hi-speed shutter camera.</a>
             </h3>
 
             <div class="media_social">
@@ -798,11 +963,11 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right2.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object" src="{{ asset('img/pop_right2.jpg') }}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
-                <a href="single.html" target="_self">Samsung is the best mobile in the android market.</a>
+                <a href="single.html" target="_blank">Samsung is the best mobile in the android market.</a>
             </h3>
 
             <div class="media_social">
@@ -812,11 +977,11 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right3.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object" src="{{ asset('img/pop_right3.jpg') }}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
-                <a href="single.html" target="_self">Apple launches photo-centric wrist watch for Android</a>
+                <a href="single.html" target="_blank">Apple launches photo-centric wrist watch for Android</a>
             </h3>
 
             <div class="media_social">
@@ -826,11 +991,11 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right4.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object" src="{{ asset('img/pop_right4.jpg') }}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
-                <a href="single.html" target="_self">DSLR is the most old camera at this time readmore about new
+                <a href="single.html" target="_blank">DSLR is the most old camera at this time readmore about new
                     products</a>
             </h3>
 
@@ -839,7 +1004,7 @@
             </div>
         </div>
     </div>
-    <p class="widget_divider"><a href="#" target="_self">More News&nbsp;&nbsp;&raquo; </a></p>
+    <p class="widget_divider"><a href="#" target="_blank">More News&nbsp;&nbsp;&raquo; </a></p>
 </div>
 <!-- Most Commented News -->
 
@@ -847,7 +1012,7 @@
     <div class="widget_title widget_black">
         <h2><a href="#">Editor Corner</a></h2>
     </div>
-    <div class="widget_body"><img class="img-responsive left" src="assets/img/editor.jpg"
+    <div class="widget_body"><img class="img-responsive left" src="{{ asset('img/editor.jpg') }}"
                                   alt="Generic placeholder image">
 
         <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
@@ -862,10 +1027,10 @@
 <!-- Editor News -->
 
 <div class="widget hidden-xs m30">
-    <img class="img-responsive add_img" src="assets/img/right_add7.jpg" alt="add_one">
-    <img class="img-responsive add_img" src="assets/img/right_add7.jpg" alt="add_one">
-    <img class="img-responsive add_img" src="assets/img/right_add7.jpg" alt="add_one">
-    <img class="img-responsive add_img" src="assets/img/right_add7.jpg" alt="add_one">
+    <img class="img-responsive add_img" src="{{ asset('img/right_add7.jpg') }}" alt="add_one">
+    <img class="img-responsive add_img" src="{{ asset('img/right_add7.jpg') }}" alt="add_one">
+    <img class="img-responsive add_img" src="{{ asset('img/right_add7.jpg') }}" alt="add_one">
+    <img class="img-responsive add_img" src="{{ asset('img/right_add7.jpg') }}" alt="add_one">
 </div>
 <!--Advertisement -->
 
@@ -873,7 +1038,7 @@
     <div class="widget_title widget_black">
         <h2><a href="#">Readers Corner</a></h2>
     </div>
-    <div class="widget_body"><img class="img-responsive left" src="assets/img/reader.jpg"
+    <div class="widget_body"><img class="img-responsive left" src="{{ asset('img/reader.jpg') }}"
                                   alt="Generic placeholder image">
 
         <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
@@ -888,7 +1053,7 @@
 <!--  Readers Corner News -->
 
 <div class="widget hidden-xs m30">
-    <img class="img-responsive widget_img" src="assets/img/podcast.jpg" alt="add_one">
+    <img class="img-responsive widget_img" src="{{ asset('img/podcast.jpg') }}" alt="add_one">
 </div>
 <!--Advertisement-->
 </div>
@@ -899,9 +1064,6 @@
 
 </div>
 <!-- container -->
-
-</section>
-<!-- entity_section -->
 
 <section id="subscribe_section" class="subscribe_section">
     <div class="row">
@@ -929,10 +1091,10 @@
         <hr class="footer-top">
         <div class="row">
             <div class="col-md-3">
-                <div class="footer_widget_title"><h3><a href="category.html" target="_self">About Tech</a></h3></div>
+                <div class="footer_widget_title"><h3><a href="category.html" target="_blank">About Tech</a></h3></div>
                 <div class="logo footer-logo">
                     <a title="fontanero" href="index.html">
-                        <img src="assets/img/tech_about.jpg" alt="technews">
+                        <img src="{{ asset('img/tech_about.jpg') }}" alt="technews">
                     </a>
 
                     <p>Competently conceptualize go forward testing procedures and B2B expertise. Phosfluorescently
@@ -941,7 +1103,7 @@
             </div>
             <div class="col-md-3">
                 <div class="footer_widget_title">
-                    <h3><a href="category.html" target="_self">Discover</a></h3>
+                    <h3><a href="category.html" target="_blank">Discover</a></h3>
                 </div>
                 <div class="row">
                     <div class="col-xs-4">
@@ -980,80 +1142,80 @@
             </div>
             <div class="col-md-3">
                 <div class="footer_widget_title">
-                    <h3><a href="#" target="_self">Editor Picks</a></h3>
+                    <h3><a href="#" target="_blank">Editor Picks</a></h3>
                 </div>
                 <div class="media">
                     <div class="media-left">
-                        <a href="#"><img class="media-object" src="assets/img/editor_pic1.jpg"
+                        <a href="#"><img class="media-object" src="{{ asset('img/editor_pic1.jpg') }}"
                                          alt="Generic placeholder image"></a>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">
                             <a href="single.html">Apple launches photo-centric wrist watch for Android</a>
-                        </h3> 
+                        </h3>
                         <span class="rating">
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star-half-full"></i> 
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-full"></i>
                         </span>
                     </div>
                 </div>
                 <div class="media">
                     <div class="media-left">
-                        <a href="#"><img class="media-object" src="assets/img/editor_pic2.jpg"
+                        <a href="#"><img class="media-object" src="{{ asset('img/editor_pic2.jpg') }}"
                                          alt="Generic placeholder image"></a>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">
                             <a href="single.html">Apple launches photo-centric wrist watch for Android</a>
-                        </h3> 
+                        </h3>
                         <span class="rating">
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star-half-full"></i> 
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-full"></i>
                         </span>
                     </div>
                 </div>
                 <div class="media">
                     <div class="media-left">
-                        <a href="#"><img class="media-object" src="assets/img/editor_pic3.jpg"
+                        <a href="#"><img class="media-object" src="{{ asset('img/editor_pic3.jpg') }}"
                                          alt="Generic placeholder image"></a>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">
                             <a href="single.html">Apple launches photo-centric wrist watch for Android</a>
-                        </h3> 
+                        </h3>
                         <span class="rating">
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star-half-full"></i> 
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-full"></i>
                         </span>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="footer_widget_title">
-                    <h3><a href="category.html" target="_self">Tech Photos</a></h3>
+                    <h3><a href="category.html" target="_blank">Tech Photos</a></h3>
                 </div>
                 <div class="widget_photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo1.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo2.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo3.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo4.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo5.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo6.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo7.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo8.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo9.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo10.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo11.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo12.jpg" alt="Tech Photos">
+                    <img class="img-thumbnail" src="{{ asset('img/tech_photo1.jpg') }}" alt="Tech Photos">
+                    <img class="img-thumbnail" src="{{ asset('img/tech_photo2.jpg') }}" alt="Tech Photos">
+                    <img class="img-thumbnail" src="{{ asset('img/tech_photo3.jpg') }}" alt="Tech Photos">
+                    <img class="img-thumbnail" src="{{ asset('img/tech_photo4.jpg') }}" alt="Tech Photos">
+                    <img class="img-thumbnail" src="{{ asset('img/tech_photo5.jpg') }}" alt="Tech Photos">
+                    <img class="img-thumbnail" src="{{ asset('img/tech_photo6.jpg') }}" alt="Tech Photos">
+                    <img class="img-thumbnail" src="{{ asset('img/tech_photo7.jpg') }}" alt="Tech Photos">
+                    <img class="img-thumbnail" src="{{ asset('img/tech_photo8.jpg') }}" alt="Tech Photos">
+                    <img class="img-thumbnail" src="{{ asset('img/tech_photo9.jpg') }}" alt="Tech Photos">
+                    <img class="img-thumbnail" src="{{ asset('img/tech_photo10.jpg') }}" alt="Tech Photos">
+                    <img class="img-thumbnail" src="{{ asset('img/tech_photo11.jpg') }}" alt="Tech Photos">
+                    <img class="img-thumbnail" src="{{ asset('img/tech_photo12.jpg') }}" alt="Tech Photos">
                 </div>
 
             </div>
@@ -1078,8 +1240,8 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <p>&copy; Copyright 2016-Tech News . Design by: <a href="https://uicookies.com">uiCookies</a> </p>
-                    </div>
+                        <p>&copy; Copyright 2016-Tech News . Design by: <a href="https://uicookies.com">uiCookies</a>
+                        </p></div>
                     <div class="col-sm-3">
                         <p>Technology News Magazine</p>
                     </div>
@@ -1159,19 +1321,19 @@
 <!-- #main-wrapper -->
 
 <!-- jquery Core-->
-<script src="assets/js/jquery-2.1.4.min.js"></script>
+<script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
 
 <!-- Bootstrap -->
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
 <!-- Theme Menu -->
-<script src="assets/js/mobile-menu.js"></script>
+<script src="{{ asset('js/mobile-menu.js') }}"></script>
 
 <!-- Owl carousel -->
-<script src="assets/js/owl.carousel.min.js"></script>
+<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 
 <!-- Theme Script -->
-<script src="assets/js/script.js"></script>
+<script src="{{ asset('js/script.js') }}"></script>
 </body>
 
 </html>
