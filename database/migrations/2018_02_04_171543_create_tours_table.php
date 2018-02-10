@@ -26,7 +26,7 @@ class CreateToursTable extends Migration
           $table->float('baby_price');
           $table->text('image');
           $table->text('description');
-          $table->longText('details');
+          $table->longText('detail');
           $table->integer('company_id')->unsigned()->nullable();
           $table->foreign('company_id')->references('id')->on('companies');
           $table->timestamps();

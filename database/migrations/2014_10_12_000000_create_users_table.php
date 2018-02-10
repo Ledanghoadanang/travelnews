@@ -22,8 +22,6 @@ class CreateUsersTable extends Migration
         $table->string('address');
         $table->enum('gender', ['Female', 'Male']);
         $table->integer('role');
-        $table->integer('company_id')->unsigned()->nullable();
-        $table->foreign('company_id')->references('id')->on('companies');
         $table->rememberToken();
         $table->timestamps();
     });
